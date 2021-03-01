@@ -76,6 +76,12 @@ input[type="text"] {
     color: #000 !important;
   }
 }
+.shopify-payment-button .shopify-payment-button__button--unbranded {
+  background-color: var(--white);
+  color: #000;
+  font-weight: 400;
+  border-radius: 0;
+}
 .hero {
   .mega-title {
     font-family: var(--font-serif);
@@ -86,6 +92,8 @@ input[type="text"] {
   border-radius: 18px;
   width: 36px;
   height: 36px;
+  padding: 0;
+  line-height: 32px;
   .icon {
     vertical-align: middle;
     width: 16px;
@@ -96,6 +104,13 @@ input[type="text"] {
   .icon-twitter,
   .icon-pinterest {
     fill: #fff;
+  }
+  &:hover {
+    .icon-facebook,
+    .icon-twitter,
+    .icon-pinterest {
+      fill: var(--green-darkest);
+    }
   }
 }
 .share-title {
